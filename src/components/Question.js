@@ -18,6 +18,7 @@ function Question({ question, onAnswered }) {
       }, 1000);
     }
 
+    // cleanup function
     return () => {
       clearTimeout(intervalId);
     };
